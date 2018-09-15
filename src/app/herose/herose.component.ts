@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import {Hero} from '../hero';
+import {HEROES} from '../mock-herose';
 
 @Component({
   selector: 'app-herose',
@@ -13,6 +14,7 @@ hero:Hero = {
   name:"Windstorm"
 }
   isSpecial = true;
+  herose  = HEROES;
 
   onSave(e:any){
     console.log(e);
